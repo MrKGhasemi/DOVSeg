@@ -1,4 +1,4 @@
-# DOVSeg: Dynamic Open-Set Segmentation Pipeline
+# DOVSeg: Dynamic Open-Vocabulary Semantic Segmentation Pipeline
 
 ![DOVSeg Example Output](./assets/output.png)
 ---
