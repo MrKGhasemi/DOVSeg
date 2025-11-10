@@ -1,0 +1,13 @@
+torch
+torchvision
+transformers
+accelerate
+bitsandbytes
+spacy
+pillow
+opencv-python-headless
+numpy
+supervision
+groundingdino-py
+matplotlib
+openai
