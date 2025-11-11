@@ -69,7 +69,7 @@ pip install git+[https://github.com/facebookresearch/segment-anything.git]
 download the checkpoint files for `GroundingDINO` and `SAM`.
 
 *`GroundingDINO (Swin-T)`*:
-Download `groundingdino_swint_ogc.pth` from this [link](https://github.com/IDEA-Research/GroundingDINO/releases/download/v0.1.0-alpha/groundingdino_swint_ogc.pth).
+Download `groundingdino_swint_ogc.pth` from this [link](https://github.com/IDEA-Research/GroundingDINO/releases/download/v0.1.0-alpha/groundingdino_swint_ogc.pth) and this [link](https://github.com/IDEA-Research/GroundingDINO/releases/download/v0.1.0-alpha2/groundingdino_swinb_cogcoor.pth).
 
 *`SAM (ViT-H)`*:
 Download `sam_vit_h_4b8939.pth` from this [link](https://dl.fbaipublicfiles.com/segment_anything/sam_vit_h_4b8939.pth).
