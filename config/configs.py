@@ -2,19 +2,19 @@
 BLIP_MODEL_ID = "Salesforce/blip-image-captioning-large"
 SPACY_MODEL = "en_core_web_lg"
 
-GROUNDING_DINO_CONFIG_PATH = "config/GroundingDINO_SwinT_OGC.py"
-GROUNDING_DINO_CHECKPOINT_PATH = "weights/groundingdino_swint_ogc.pth"
+GROUNDING_DINO_CONFIG_PATH = "config/GroundingDINO_SwinB_cfg.py"  # or "config/GroundingDINO_SwinT_OGC.py"
+GROUNDING_DINO_CHECKPOINT_PATH = "weights/groundingdino_swinb_cogcoor.pth" # or "weights/groundingdino_swint_ogc.pth"
 SAM_CHECKPOINT_PATH = "weights/sam_vit_h_4b8939.pth"
 SAM_ENCODER_VERSION = "vit_h"
 
 # Detection Thresholds
-BOX_THRESHOLD = 0.35
-TEXT_THRESHOLD = 0.25
-NMS_THRESHOLD = 0.8
-MASK_CONFIDENCE_THRESHOLD = 0.2 # The `if confidence > 0.3` check
+BOX_THRESHOLD = 0.1
+TEXT_THRESHOLD = 0.1
+NMS_THRESHOLD = 0.7
+MASK_CONFIDENCE_THRESHOLD = 0.1
 
 # NLP & Prompting
-SYNONYM_THRESHOLD = 0.8
+SYNONYM_THRESHOLD = 0.7
 BLIP_MAX_TOKENS = 50
 PERSON_REPLACE_LIST = ['man', 'woman', 'child', 'boy', 'girl', 'people']
 
