@@ -66,7 +66,7 @@ python -m spacy download en_core_web_lg
 pip install git+[https://github.com/facebookresearch/segment-anything.git]
 ```
 3. Download Model Weights
-download the checkpoint files for `GroundingDINO` and `SAM`.
+Download the checkpoint files for `GroundingDINO` and `SAM`.
 
 *`GroundingDINO (Swin-T)`*:
 Download `groundingdino_swint_ogc.pth` from this [link](https://github.com/IDEA-Research/GroundingDINO/releases/download/v0.1.0-alpha/groundingdino_swint_ogc.pth) and this [link](https://github.com/IDEA-Research/GroundingDINO/releases/download/v0.1.0-alpha2/groundingdino_swinb_cogcoor.pth).
@@ -77,7 +77,7 @@ Download `sam_vit_h_4b8939.pth` from this [link](https://dl.fbaipublicfiles.com/
 Place in the `weights` directory.
 
 4. Configure Your Paths
-This is the most important step. Open config.py and update the file paths to match where you cloned the repos and downloaded the weights.
+In config.py, update the file paths to match where you cloned the repos and downloaded the weights.
 ```bash
 # config.py
 GROUNDING_DINO_CONFIG_PATH = "groundingdino/config/GroundingDINO_SwinT_OGC.py"
