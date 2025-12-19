@@ -180,7 +180,7 @@ def main():
 
     # Argument Validation 
     if args.mode == "llm" and not args.api_key:
-        print("Error: --mode 'llm' requires --api-key or AVALAI_API_KEY environment variable.")
+        print("Error: --mode 'llm' requires --api-key")
         sys.exit(1)
         
     if not os.path.exists(args.input):
@@ -209,4 +209,5 @@ def main():
         process_image(image_path, models_dict, args)
 
 if __name__ == "__main__":
+
     main()
