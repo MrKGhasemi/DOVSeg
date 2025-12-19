@@ -85,7 +85,7 @@ def parse_and_clean_nouns(raw_text, nlp):
 
 def get_image_crops(raw_image):
     """
-    Splits the image into 25 crops (16 patch, 4 quadrants, 2 halves, 2 halves, 1 full)
+    Splits the image into 25 crops (16 patch, 4 quadrants, 2 Horizontal halves, 2 Vertical halves, 1 full)
     """
     x, y = raw_image.size
     p1 = raw_image.crop(box=(0, 0, x / 2, y / 2))
@@ -228,4 +228,5 @@ def show_visualizations(image_rgb, classified_masks, class_colors):
     
     plt.subplots_adjust(hspace=0.15)
     
+
     plt.show()
