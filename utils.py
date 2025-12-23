@@ -1,8 +1,13 @@
+import torch
 import base64
 import numpy as np
 import cv2
 import matplotlib.pyplot as plt
 from config import configs
+import colorsys
+import matplotlib.pyplot as plt
+import matplotlib.patches as mpatches
+from tqdm import tqdm
 
 
 def filter_synonyms(nouns, nlp, threshold=None):
@@ -230,3 +235,4 @@ def show_visualizations(image_rgb, classified_masks, class_colors):
     
 
     plt.show()
+
