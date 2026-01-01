@@ -2,7 +2,7 @@
 
 ![DOVSeg Example Output](./assets/output.png)
 ---
-This project implements a flexible pipeline for open-set semantic segmentation. It dynamically identifies objects in an image using a captioning model (BLIP) or a generative LLM, and then uses GroundingDINO and the Segment Anything Model (SAM) to generate precise segmentation masks for those objects.
+This project implements a flexible pipeline for open-set semantic segmentation. It dynamically identifies objects in an image using a captioning model (BLIP) or a generative LLM, and then uses GroundingDINO and the [Segment Anything Model (SAM)](https://github.com/facebookresearch/segment-anything) to generate precise segmentation masks for those objects.
 
 The core workflow is:
 
