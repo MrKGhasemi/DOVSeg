@@ -16,16 +16,21 @@ The core workflow is:
 This pipeline is built by combining several state-of-the-art models:
 
 1.  **Class Generation (2 Modes):**
+
      **`blip` mode:** Uses **BLIP-Large** (`Salesforce/blip-image-captioning-large`) to generate 9 captions (from 4 quadrants, 4 halves, and 1 full image).
+     
      **`llm` mode:** Uses an external API (configured for `gemini-2.0-flash` via `api.avalai.ir`) to generate a comma-separated list of objects.
 
 2.  **Noun Filtering:**
+
     **spaCy** (`en_core_web_lg`): Parses the generated text, extracts key nouns, and intelligently filters synonyms based on vector similarity to create a clean, unique list of objects for detection.
 
 3.  **Object Detection:**
+
     **GroundingDINO:** A powerful open-set detector that finds bounding boxes for any given text prompt (the class list from the previous step).
 
 4.  **Segmentation:**
+
     **Segment Anything Model (SAM):** Generates high-quality segmentation masks for the bounding boxes provided by GroundingDINO.
 
 ---
